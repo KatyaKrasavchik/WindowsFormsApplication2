@@ -22,6 +22,7 @@ namespace WindowsFormsApplication2
         public static int Ch { get; set; }
         public static int Row { get; set; }
         public static string Search { get; set; }
+        public static string WhatSearch { get; set; }
 
     }
 

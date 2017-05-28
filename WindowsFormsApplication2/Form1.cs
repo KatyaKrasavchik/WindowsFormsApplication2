@@ -70,57 +70,41 @@ namespace WindowsFormsApplication2
                 table[Data.Row] = new person(Data.Name, Data.Adress, Data.Job, Data.Education, Data.Rank, Data.DateRank, Data.Post, Data.Unit, Data.ServiceForm, Data.ServicePeriod, Data.Character);
                 Data.Row = -1;
             }
-
-            for (int i = 0; i < table.Count; i++)
+            try
             {
-                dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character);
+                for (int i = 0; i < table.Count; i++)
+                {
+                    dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character);
+                }
             }
-
-            //if (Data.Ch == 2)
-            //{
-            //    //try
-            //    {
-            //        int ind = 0;
-            //        for (int i = 0; i < table.Count; i++)
-            //        {
-            //            if (table[i].Name.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Adress.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Job.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Education.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Rank.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].DateRank.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Post.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Unit.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].ServiceForm.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].ServicePeriod.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //            if (table[i].Character.Contains(txtSearch.Text)) { dataGridView1.Rows.Add(ind, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); ind++; break; }
-            //        }
-            //        ind = 0;
-            //    }
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
-            //}
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Повідомлення", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void відкритиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
-                return;
-            XmlSerializer formatter = new XmlSerializer(typeof(List<person>));
-            using (FileStream fs = new FileStream(openFileDialog1.FileName, FileMode.OpenOrCreate))
+            try
             {
-
-                table = (List<person>)formatter.Deserialize(fs);
-                dataGridView1.Rows.Clear();
-                for (int i = 0; i < table.Count; i++)
+                if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+                    return;
+                XmlSerializer formatter = new XmlSerializer(typeof(List<person>));
+                using (FileStream fs = new FileStream(openFileDialog1.FileName, FileMode.OpenOrCreate))
                 {
 
-                    dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character);
-                }
-                //MessageBox.Show("Объект десериализован");
+                    table = (List<person>)formatter.Deserialize(fs);
+                    dataGridView1.Rows.Clear();
+                    for (int i = 0; i < table.Count; i++)
+                    {
 
+                        dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Повідомлення", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -134,8 +118,6 @@ namespace WindowsFormsApplication2
             using (FileStream fs = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, table);
-
-               // MessageBox.Show("Объект сериализован");
             }
         }
 
@@ -170,6 +152,7 @@ namespace WindowsFormsApplication2
         {
             int row = dataGridView1.CurrentCell.RowIndex;
             dataGridView1.Rows.RemoveAt(row);
+            table.RemoveAt(row);
         }
 
         private void btnChange_Click(object sender, EventArgs e)
@@ -185,6 +168,29 @@ namespace WindowsFormsApplication2
             if (txtSearch.Text != "")
             {
                 Data.Search = txtSearch.Text;
+                Data.WhatSearch = "all";
+                Form3 f = new Form3();
+                f.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtUnitSearch.Text != "")
+            {
+                Data.Search = txtUnitSearch.Text;
+                Data.WhatSearch = "unit";
+                Form3 f = new Form3();
+                f.Show();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (txtRankSearch.Text != "")
+            {
+                Data.Search = txtRankSearch.Text;
+                Data.WhatSearch = "rank";
                 Form3 f = new Form3();
                 f.Show();
             }

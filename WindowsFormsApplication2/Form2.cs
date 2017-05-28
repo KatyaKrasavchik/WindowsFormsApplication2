@@ -61,5 +61,9 @@ namespace WindowsFormsApplication2
                 textBox11.Text = Data.DateRank;
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

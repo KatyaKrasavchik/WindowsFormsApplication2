@@ -1,54 +1,80 @@
 <?xml version="1.0"?>
 <ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <person>
-    <Name>лол</Name>
+    <Name>Кайдалов Вадим Дмитрович</Name>
+    <Adress>Шевченка 15</Adress>
+    <Job>безробітній</Job>
+    <Education>нема</Education>
+    <Rank>генерал</Rank>
+    <DateRank>2.05.17</DateRank>
+    <Post>головний</Post>
+    <Unit>1</Unit>
+    <ServiceForm>державна</ServiceForm>
+    <ServicePeriod />
+    <Character />
+  </person>
+  <person>
+    <Name>Олійник Таісія Дмитрівна</Name>
+    <Adress>Жовтнева 18</Adress>
+    <Job>лікар</Job>
+    <Education>вища</Education>
+    <Rank>майор</Rank>
+    <DateRank />
+    <Post />
+    <Unit>2</Unit>
+    <ServiceForm>державна</ServiceForm>
+    <ServicePeriod />
+    <Character />
+  </person>
+  <person>
+    <Name>Понедєльніков Геннадій Михайлович</Name>
     <Adress />
     <Job />
-    <Education />
-    <Rank />
+    <Education>середня</Education>
+    <Rank>солжат</Rank>
     <DateRank />
     <Post />
-    <Unit />
+    <Unit>1</Unit>
     <ServiceForm />
     <ServicePeriod />
     <Character />
   </person>
   <person>
-    <Name>вамцвам</Name>
-    <Adress>мвцам</Adress>
-    <Job />
-    <Education />
-    <Rank />
+    <Name>Грамацький Микита Батькович</Name>
+    <Adress>Наукова 14</Adress>
+    <Job>домохазяїн</Job>
+    <Education>середня</Education>
+    <Rank>лейтинант</Rank>
     <DateRank />
     <Post />
-    <Unit />
-    <ServiceForm />
+    <Unit>1</Unit>
+    <ServiceForm>контрактна</ServiceForm>
     <ServicePeriod />
     <Character />
   </person>
   <person>
-    <Name />
-    <Adress>лол</Adress>
-    <Job />
-    <Education />
-    <Rank />
-    <DateRank />
-    <Post />
-    <Unit />
-    <ServiceForm />
-    <ServicePeriod />
-    <Character />
-  </person>
-  <person>
-    <Name>лол</Name>
+    <Name>Несмянович Андрій Володимирович</Name>
     <Adress />
-    <Job>лол</Job>
-    <Education />
-    <Rank />
+    <Job />
+    <Education>вища</Education>
+    <Rank>прапорщик</Rank>
     <DateRank />
     <Post />
-    <Unit />
+    <Unit>10</Unit>
     <ServiceForm />
+    <ServicePeriod />
+    <Character />
+  </person>
+  <person>
+    <Name>Тельбух Ігор Анатолійович</Name>
+    <Adress />
+    <Job>лікар</Job>
+    <Education>середня</Education>
+    <Rank>полковник</Rank>
+    <DateRank />
+    <Post />
+    <Unit>10</Unit>
+    <ServiceForm>державна</ServiceForm>
     <ServicePeriod />
     <Character />
   </person>

@@ -1,14 +1,28 @@
 <?xml version="1.0"?>
 <ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <person>
-    <Name>Кайдалов Вадим Дмитрович</Name>
-    <Adress>Шевченка 15</Adress>
-    <Job>безробітній</Job>
-    <Education>нема</Education>
-    <Rank>генерал</Rank>
-    <DateRank>2.05.17</DateRank>
-    <Post>головний</Post>
+    <Name>Грамацький Микита Батькович</Name>
+    <Adress>Наукова 14</Adress>
+    <Job>домохазяїн</Job>
+    <Education>середня</Education>
+    <Rank>лейтинант</Rank>
+    <DateRank />
+    <Post />
     <Unit>1</Unit>
+    <ServiceForm>контрактна</ServiceForm>
+    <ServicePeriod />
+    <Character />
+  </person>
+</ArrayOfPerson>on>
+  <person>
+    <Name>Олійник Таісія Дмитрівна</Name>
+    <Adress>Жовтнева 18</Adress>
+    <Job>лікар</Job>
+    <Education>вища</Education>
+    <Rank>майор</Rank>
+    <DateRank />
+    <Post />
+    <Unit>2</Unit>
     <ServiceForm>державна</ServiceForm>
     <ServicePeriod />
     <Character />
@@ -27,19 +41,7 @@
     <Character />
   </person>
   <person>
-    <Name>Грамацький Микита Батькович</Name>
-    <Adress>Наукова 14</Adress>
-    <Job>домохазяїн</Job>
-    <Education>середня</Education>
-    <Rank>лейтинант</Rank>
-    <DateRank />
-    <Post />
-    <Unit>1</Unit>
-    <ServiceForm>контрактна</ServiceForm>
-    <ServicePeriod />
-    <Character />
-  </person>
-</ArrayOfPerson><Name>Несмянович Андрій Володимирович</Name>
+    <Name>Несмянович Андрій Володимирович</Name>
     <Adress />
     <Job />
     <Education>вища</Education>

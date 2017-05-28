@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <person>
+    <Name>Грамацький Микита Батькович</Name>
+    <Adress>Наукова 14</Adress>
+    <Job>домохазяїн</Job>
+    <Education>середня</Education>
+    <Rank>лейтинант</Rank>
+    <DateRank />
+    <Post />
+    <Unit>1</Unit>
+    <ServiceForm>контрактна</ServiceForm>
+    <ServicePeriod />
+    <Character />
+  </person>
+</ArrayOfPerson>

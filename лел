@@ -14,6 +14,19 @@
     <Character />
   </person>
   <person>
+    <Name>Олійник Таісія Дмитрівна</Name>
+    <Adress>Жовтнева 18</Adress>
+    <Job>лікар</Job>
+    <Education>вища</Education>
+    <Rank>майор</Rank>
+    <DateRank />
+    <Post />
+    <Unit>2</Unit>
+    <ServiceForm>державна</ServiceForm>
+    <ServicePeriod />
+    <Character />
+  </person>
+  <person>
     <Name>Понедєльніков Геннадій Михайлович</Name>
     <Adress />
     <Job />
@@ -36,31 +49,6 @@
     <Post />
     <Unit>1</Unit>
     <ServiceForm>контрактна</ServiceForm>
-    <ServicePeriod />
-    <Character />
-  </person>
-</ArrayOfPerson><Name>Несмянович Андрій Володимирович</Name>
-    <Adress />
-    <Job />
-    <Education>вища</Education>
-    <Rank>прапорщик</Rank>
-    <DateRank />
-    <Post />
-    <Unit>10</Unit>
-    <ServiceForm />
-    <ServicePeriod />
-    <Character />
-  </person>
-  <person>
-    <Name>Тельбух Ігор Анатолійович</Name>
-    <Adress />
-    <Job>лікар</Job>
-    <Education>середня</Education>
-    <Rank>полковник</Rank>
-    <DateRank />
-    <Post />
-    <Unit>10</Unit>
-    <ServiceForm>державна</ServiceForm>
     <ServicePeriod />
     <Character />
   </person>

@@ -52,6 +52,12 @@
             this.btnDel = new System.Windows.Forms.Button();
             this.btnChange = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtUnitSearch = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtRankSearch = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -226,11 +232,69 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(472, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Пошук";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtUnitSearch
+            // 
+            this.txtUnitSearch.Location = new System.Drawing.Point(366, 31);
+            this.txtUnitSearch.Name = "txtUnitSearch";
+            this.txtUnitSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtUnitSearch.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(305, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Підрозділ";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(751, 30);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Пошук";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtRankSearch
+            // 
+            this.txtRankSearch.Location = new System.Drawing.Point(645, 30);
+            this.txtRankSearch.Name = "txtRankSearch";
+            this.txtRankSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtRankSearch.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(595, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Звання";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 419);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtRankSearch);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtUnitSearch);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.btnDel);
@@ -277,6 +341,12 @@
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnChange;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtUnitSearch;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtRankSearch;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -24,19 +24,36 @@ namespace WindowsFormsApplication2
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < table.Count; i++)
+            if (Data.WhatSearch == "all")
             {
-                if (table[i].Name.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Adress.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Job.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Education.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Rank.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].DateRank.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Post.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Unit.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].ServiceForm.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].ServicePeriod.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
-                if (table[i].Character.Contains(Data.Search)) { dataGridView1.Rows.Add( table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                for (int i = 0; i < table.Count; i++)
+                {
+                    if (table[i].Name.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Adress.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Job.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Education.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Rank.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].DateRank.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Post.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Unit.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].ServiceForm.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].ServicePeriod.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                    if (table[i].Character.Contains(Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); continue; }
+                }
+            }
+            else if (Data.WhatSearch == "unit")
+            {
+                for (int i = 0; i < table.Count; i++)
+                {
+                    if (table[i].Unit == (Data.Search)) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); }
+                }
+            }
+            else if (Data.WhatSearch == "rank")
+            {
+                for (int i = 0; i < table.Count; i++)
+                {
+                    if (table[i].Rank == Data.Search) { dataGridView1.Rows.Add(table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character); Table1Add(i); }
+                }
             }
         }
 
@@ -56,14 +73,19 @@ namespace WindowsFormsApplication2
             using (FileStream fs = new FileStream(saveFileDialog1.FileName, FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, table1);
-
-                // MessageBox.Show("Объект сериализован");
             }
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int row = dataGridView1.CurrentCell.RowIndex;
+            dataGridView1.Rows.RemoveAt(row);
+            table1.RemoveAt(row);
         }
     }
 }
