@@ -42,7 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lable1
@@ -166,13 +166,6 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Підрозділ";
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(102, 221);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(246, 20);
-            this.textBox8.TabIndex = 16;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -241,11 +234,23 @@
             this.textBox11.Size = new System.Drawing.Size(199, 20);
             this.textBox11.TabIndex = 25;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "контрактна",
+            "державна"});
+            this.comboBox1.Location = new System.Drawing.Point(102, 221);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(246, 21);
+            this.comboBox1.TabIndex = 26;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 404);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
@@ -253,7 +258,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label6);
@@ -294,7 +298,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label8;
@@ -303,5 +306,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -83,9 +83,13 @@ namespace WindowsFormsApplication2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int row = dataGridView1.CurrentCell.RowIndex;
-            dataGridView1.Rows.RemoveAt(row);
-            table1.RemoveAt(row);
+            DialogResult res = MessageBox.Show("Ви впевнені, що хочете видалити цей рядок?", "Попередження", MessageBoxButtons.OKCancel);
+            if (res == DialogResult.OK)
+            {
+                int row = dataGridView1.CurrentCell.RowIndex;
+                dataGridView1.Rows.RemoveAt(row);
+                table1.RemoveAt(row);
+            }
         }
     }
 }

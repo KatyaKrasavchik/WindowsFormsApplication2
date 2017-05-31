@@ -19,62 +19,31 @@ namespace WindowsFormsApplication2
         public Form1()
         {
             InitializeComponent();
-        }
-
-        [Serializable]
-        public class person
-        {
-            public string Name { get; set; }
-            public string Adress { get; set; }
-            public string Job { get; set; }
-            public string Education { get; set; }
-            public string Rank { get; set; }
-            public string DateRank { get; set; }
-            public string Post { get; set; }
-            public string Unit { get; set; }
-            public string ServiceForm { get; set; }
-            public string ServicePeriod { get; set; }
-            public string Character { get; set; }
-
-            public person(string n, string a, string j, string e, string r, string d, string p, string u, string sf, string sp, string c)
-            {
-                Name = n;
-                Adress = a;
-                Job = j;
-                Education = e;
-                Rank = r;
-                DateRank = d;
-                Post = p;
-                Unit = u;
-                ServiceForm = sf;
-                ServicePeriod = sp;
-                Character = c;
-            }
-
-            public person() { }
-
-        }
-
+        }  
 
         private void Form1_Load(object sender, EventArgs e)
         {
             if (Data.Ch == 1 && (Data.Row < 0 || Data.Row >= table.Count))
             {
-                person p1 = new person(Data.Name, Data.Adress, Data.Job, Data.Education, Data.Rank, Data.DateRank, Data.Post, Data.Unit, Data.ServiceForm, Data.ServicePeriod, Data.Character);
+                person p1 = new person(Data.Name, Data.Adress, Data.Job, Data.Education, Data.Rank, Data.DateRank,
+                    Data.Post, Data.Unit, Data.ServiceForm, Data.ServicePeriod, Data.Character);
                 table.Add(p1);
                 Data.Ch = 0;
             }
 
             else if (Data.Row >= 0 && Data.Row < table.Count)
             {
-                table[Data.Row] = new person(Data.Name, Data.Adress, Data.Job, Data.Education, Data.Rank, Data.DateRank, Data.Post, Data.Unit, Data.ServiceForm, Data.ServicePeriod, Data.Character);
+                table[Data.Row] = new person(Data.Name, Data.Adress, Data.Job, Data.Education, Data.Rank, Data.DateRank, 
+                    Data.Post, Data.Unit, Data.ServiceForm, Data.ServicePeriod, Data.Character);
                 Data.Row = -1;
             }
             try
             {
                 for (int i = 0; i < table.Count; i++)
                 {
-                    dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character);
+                    dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education,
+                        table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm,
+                        table[i].ServicePeriod, table[i].Character);
                 }
             }
             catch (Exception ex)
@@ -98,7 +67,9 @@ namespace WindowsFormsApplication2
                     for (int i = 0; i < table.Count; i++)
                     {
 
-                        dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm, table[i].ServicePeriod, table[i].Character);
+                        dataGridView1.Rows.Insert(i, table[i].Name, table[i].Adress, table[i].Job, table[i].Education, 
+                            table[i].Rank, table[i].DateRank, table[i].Post, table[i].Unit, table[i].ServiceForm,
+                            table[i].ServicePeriod, table[i].Character);
                     }
                 }
             }
@@ -150,9 +121,15 @@ namespace WindowsFormsApplication2
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            int row = dataGridView1.CurrentCell.RowIndex;
-            dataGridView1.Rows.RemoveAt(row);
-            table.RemoveAt(row);
+            DialogResult res = MessageBox.Show( "Ви впевнені, що хочете видалити цей рядок?",
+                "Попередження", MessageBoxButtons.OKCancel);
+
+            if (res == DialogResult.OK)
+            {
+                int row = dataGridView1.CurrentCell.RowIndex;
+                dataGridView1.Rows.RemoveAt(row);
+                table.RemoveAt(row);
+            }
         }
 
         private void btnChange_Click(object sender, EventArgs e)

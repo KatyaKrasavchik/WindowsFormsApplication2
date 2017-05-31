@@ -40,19 +40,33 @@
     <Character />
   </person>
   <person>
-    <Name>Тельбух Ігор Анатолійович</Name>
-    <Adress />
-    <Job>лікар</Job>
+    <Name>Грамацький Микита Батькович</Name>
+    <Adress>Наукова 14</Adress>
+    <Job>домохазяїн</Job>
     <Education>середня</Education>
-    <Rank>полковник</Rank>
+    <Rank>лейтинант</Rank>
     <DateRank />
     <Post />
-    <Unit>10</Unit>
-    <ServiceForm>державна</ServiceForm>
+    <Unit>1</Unit>
+    <ServiceForm>контрактна</ServiceForm>
     <ServicePeriod />
     <Character />
   </person>
-</ArrayOfPerson>толійович</Name>
+  <person>
+    <Name>Несмянович Андрій Володимирович</Name>
+    <Adress />
+    <Job />
+    <Education>вища</Education>
+    <Rank>прапорщик</Rank>
+    <DateRank />
+    <Post />
+    <Unit>10</Unit>
+    <ServiceForm />
+    <ServicePeriod />
+    <Character />
+  </person>
+  <person>
+    <Name>Тельбух Ігор Анатолійович</Name>
     <Adress />
     <Job>лікар</Job>
     <Education>середня</Education>

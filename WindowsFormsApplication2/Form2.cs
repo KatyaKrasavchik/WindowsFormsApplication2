@@ -29,7 +29,7 @@ namespace WindowsFormsApplication2
             Data.DateRank = textBox11.Text;
             Data.Post = textBox6.Text;
             Data.Unit = textBox7.Text;
-            Data.ServiceForm = textBox8.Text;
+            Data.ServiceForm = comboBox1.Text;
             Data.ServicePeriod = textBox9.Text;
             Data.Character = textBox10.Text;
             Data.Ch = 1;
@@ -55,7 +55,7 @@ namespace WindowsFormsApplication2
                 textBox5.Text = Data.Rank;
                 textBox6.Text = Data.Post;
                 textBox7.Text = Data.Unit;
-                textBox8.Text = Data.ServiceForm;
+                comboBox1.Text = Data.ServiceForm;
                 textBox9.Text = Data.ServicePeriod;
                 textBox10.Text = Data.Character;
                 textBox11.Text = Data.DateRank;
